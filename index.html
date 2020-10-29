@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Javascript Drum Machine</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Drum Machine Container -->
+      <main class="drum-machine" id="drum-machine">
+        <div class="header">
+          <h1>JS Drum Machine</h1>
+          <p>
+            By
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://twitter.com/angeleraser"
+              >@angeleraser</a
+            >
+          </p>
+        </div>
+        <!-- Pad Bank -->
+        <section class="pad-bank" id="pad-bank">
+          <button class="drum-pad">
+            Q
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            W
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            E
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            A
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            S
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            D
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            Z
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            X
+            <audio class="clip"></audio>
+          </button>
+          <button class="drum-pad">
+            C
+            <audio class="clip"></audio>
+          </button>
+        </section>
+        <!-- Display -->
+        <div class="display" id="display"></div>
+      </main>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/components/DrumMachine.js"></script>
+    <script type="module" src="./js/fixtures/fixtures.js"></script>
+  </body>
+</html>

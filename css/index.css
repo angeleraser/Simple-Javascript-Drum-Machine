@@ -1,0 +1,9 @@
+/* Base Styles */
+@import "./base/reset.min.css";
+@import "/css/base/settings.css";
+
+/* Fonts */
+@import "./base/fonts/fonts.css";
+
+/* Components */
+@import "./components/drum-machine.css";

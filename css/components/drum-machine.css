@@ -1,0 +1,76 @@
+.drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-black);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.8) inset;
+  border-radius: 4px;
+  font-family: "Russo One", sans-serif;
+  padding: 30px;
+  width: 95%;
+  max-width: 460px;
+}
+
+.drum-machine .pad-bank {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 33.3%);
+  grid-template-rows: repeat(3, 120px);
+  place-content: center;
+  width: 100%;
+}
+
+.drum-machine .pad-bank .drum-pad {
+  border: 1px solid var(--primary-black);
+  background-color: var(--primary-white);
+  font-size: 28px;
+  color: var(--primary-black);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.drum-machine .pad-bank .drum-pad.active,
+.drum-machine .pad-bank .drum-pad:active {
+  transform: scale(0.98);
+  color: var(--light-yellow);
+  background-color: var(--primary-cyan);
+}
+
+.drum-machine .pad-bank .drum-pad:focus {
+  outline: none;
+}
+
+.drum-machine .display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 66px;
+  width: 210px;
+  text-align: center;
+  background-color: black;
+  color: var(--light-yellow);
+}
+
+.drum-machine .header {
+  margin-bottom: 20px;
+}
+
+.drum-machine .header h1 {
+  color: var(--primary-white);
+  font-size: 26px;
+}
+
+.drum-machine p {
+  text-align: center;
+  color: var(--primary-cyan);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.drum-machine .header a {
+  text-decoration: none;
+  color: var(--primary-cyan);
+}
